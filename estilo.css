@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*  Letras
+font-family: "Inter", sans-serif;
+font-family: "Inconsolata", monospace;
+font-family: "Montserrat", sans-serif; 
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: rgb(9, 96, 174, 0.9);
+    position: absolute;
+    right: 0;
+    width: 0%;
+    height: 100vh;
+    z-index: 99999;
+    backdrop-filter: blur(10px);
+    transition: all ease 0.25s;
+    overflow: hidden;
+}
+
+#menu {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#menu li {
+    list-style: none;
+    width: 100%;
+}
+
+#cross_menu {
+    background-color: transparent;
+    font-size: 2rem;
+    color: rgb(255, 255, 255, 0.8);
+    border: none;
+    position: absolute;
+    right: 4.5%;
+    top: 1%;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.5rem 0 0.5rem 2.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(9, 96, 174, 0.9);
+}
+
+h1 {
+    color: #8fbfec;
+}
+
+h1 span,
+.saludo span {
+    color: #3e8fd8;
+}
+
+#btn_menu {
+    background-color: transparent;
+    font-size: 2rem;
+    color: rgb(255, 255, 255, 0.8);
+    border: none;
+}
+
+#inicio {
+    background-image: radial-gradient(circle at center center, rgb(71, 71, 71), rgb(8, 8, 8));
+    color: rgb(255, 255, 255, 0.9);
+}
+
+#inicio h2 {
+    justify-content: center;
+    color: gray;
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.box_inicio {
+    padding: 0.5rem;
+}
+
+.saludo {
+    font-size: 3.5rem;
+    line-height: 0.8;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+
+.box_p-inicio {
+    padding: 0.2rem;
+    text-align: center;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.fa-html5 {
+    color: #f1643d;
+    font-size: 1.3rem;
+}
+
+.fa-css3-alt {
+    color: #0f78ff;
+    font-size: 1.3rem;
+}
+
+.fa-square-js {
+    color: #fbdf1e;
+    font-size: 1.3rem;
+}
+
+.box_iconos {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.iconos-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 0.3rem;
+    font-size: 1rem;
+    color: black;
+}
+
+#perfil {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.fa-turn-up {
+    rotate: 90deg;
+}
+
+#btn_sobremi {
+    display: block;
+    margin: 0.5rem auto;
+    width: 80%;
+    font-family: "Inter", sans-serif;
+    font-style: oblique;
+    color: rgb(255, 255, 255, 0.9);
+    background-color: rgb(184, 209, 231, 0.5);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+#sobremi,
+#habilidades,
+#experiencias,
+#formacion,
+#contacto,
+#proyectos {
+    background-image: radial-gradient(circle at 77% 66%, hsla(39, 0%, 85%, 0.05) 0%, hsla(39, 0%, 85%, 0.05) 9%, transparent 9%, transparent 43%, transparent 43%, transparent 100%), radial-gradient(circle at 6% 56%, hsla(39, 0%, 85%, 0.05) 0%, hsla(39, 0%, 85%, 0.05) 20%, transparent 20%, transparent 56%, transparent 56%, transparent 100%), radial-gradient(circle at 48% 45%, hsla(39, 0%, 85%, 0.05) 0%, hsla(39, 0%, 85%, 0.05) 15%, transparent 15%, transparent 85%, transparent 85%, transparent 100%), radial-gradient(circle at 89% 6%, hsla(39, 0%, 85%, 0.05) 0%, hsla(39, 0%, 85%, 0.05) 5%, transparent 5%, transparent 32%, transparent 32%, transparent 100%), radial-gradient(circle at 71% 38%, hsla(39, 0%, 85%, 0.05) 0%, hsla(39, 0%, 85%, 0.05) 14%, transparent 14%, transparent 21%, transparent 21%, transparent 100%), radial-gradient(circle at 84% 78%, hsla(39, 0%, 85%, 0.05) 0%, hsla(39, 0%, 85%, 0.05) 11%, transparent 11%, transparent 85%, transparent 85%, transparent 100%), radial-gradient(circle at 92% 72%, hsla(39, 0%, 85%, 0.05) 0%, hsla(39, 0%, 85%, 0.05) 42%, transparent 42%, transparent 51%, transparent 51%, transparent 100%), radial-gradient(circle at 73% 95%, hsla(39, 0%, 85%, 0.05) 0%, hsla(39, 0%, 85%, 0.05) 48%, transparent 48%, transparent 63%, transparent 63%, transparent 100%), radial-gradient(circle at 29% 29%, hsla(39, 0%, 85%, 0.05) 0%, hsla(39, 0%, 85%, 0.05) 24%, transparent 24%, transparent 73%, transparent 73%, transparent 100%), linear-gradient(90deg, hsl(147, 0%, 99%), hsl(147, 0%, 99%));
+    padding: 0.5rem;
+}
+
+section h2 {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+}
+
+.fa-minus {
+    color: #0960ae;
+}
+
+.p-sobremi {
+    padding: 0 1.5rem;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.recuadro {
+    border-radius: 1rem;
+    padding: 0.2rem 0.3rem;
+    background-color: rgb(144, 238, 144, 0.3);
+    margin-top: 1rem;
+    color: rgb(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+}
+
+.recuadro h3 {
+    color: green;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.recuadro p {
+    margin: 0.3rem;
+}
+
+/* habilidades seccion */
+.box_habilidades {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.card_habilidades {
+    background-color: rgb(184, 209, 231, 0.1);
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card_habilidades li {
+    margin-left: 5.1rem;
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.card_habilidades h3 {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.icon-habi {
+    font-size: 3.5rem;
+}
+
+.herramientas-habi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-github {
+    color: black;
+    font-size: 3rem;
+    margin: 0.2rem;
+}
+
+.fa-visual-studio {
+    color: #199aef;
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+/* EXPERIENCIAS */
+
+.box_experiencia p {
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.box_experiencia h3 {
+    color: #64a6e3;
+    padding: 0 1rem;
+}
+
+.box_experiencia {
+    padding: 0 1.5rem;
+    text-align: center;
+    background-color: rgb(184, 209, 231, 0.1);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.fa-gear {
+    display: block;
+    font-size: 2rem;
+}
+
+.rc-ex h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.rc-ex li {
+    font-size: 1.2rem;
+    margin-left: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/*FORMACION*/
+
+#formacion ul {
+    margin-left: 0.5rem;
+    border-left: 5px solid rgb(143, 191, 236, 0.3);
+    border-radius: 2rem;
+    padding: 1rem 0rem 1rem 1.5rem;
+}
+
+#formacion ul h3 {
+    color: rgb(100, 166, 227, 0.7);
+    font-size: 1.5rem;
+}
+
+#formacion ul li {
+    margin: 1rem 0;
+    list-style: circle;
+}
+
+#formacion ul li p {
+    color: rgb(0, 0, 0, 0.7);
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+hr {
+    width: 80%;
+    color: #64a6e3;
+    background-color: #64a6e3;
+    margin: auto;
+    height: 5px;
+    border-radius: 3rem;
+    border: none;
+}
+
+.box_formacion {
+    margin-bottom: 1rem;
+}
+
+/*CONTACTO*/
+
+#contacto p {
+    color: rgb(0, 0, 0, 0.7);
+    padding: 0 1rem;
+}
+
+#contacto li {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    background-color: rgb(184, 209, 231, 0.1);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0.5rem;
+    color: #8fbfec;
+}
+
+#contacto .icon-contact {
+    font-size: 1.5rem;
+    color: #0960ae;
+}
+
+/*PROYECTOS*/
+.box_proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.box_proyectos img {
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.card_proyectos {
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    background-color:  	rgb(9, 96, 174, 0.1);
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+}
+
+.contenido_card h3 {
+    color: #0960ae;
+    text-align: center;
+}
+
+.contenido_card p {
+    color: rgb(0, 0, 0, 0.7);
+    text-align: center;
+    background-color:  	rgb(9, 96, 174, 0.05);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-vercode {
+    display: block;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    color: white;
+    background-color: #0960ae;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+#btn_ver_proyectos {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(9, 96, 174, 0.9);
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border: none; 
+    text-decoration: none;
+}
+
+.head_proyectos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
