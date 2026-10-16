@@ -11,19 +11,19 @@
 
 <body>
     <div class="container">
-        <header>
+        <header id="cabezera">
             <h1>juan<span>.dev</span></h1>
             <button id="btn_menu"><span class="fa-solid fa-bars"></span></button>
             <nav id="menu_screen">
                 <button id="cross_menu"><span class="fa-solid fa-xmark"></span></button>
                 <ul id="menu">
-                    <li id="item-menu"><a href="#inicio"><span class="fa-solid fa-house"></span>  Inicio</a></li>
-                    <li id="item-menu"><a href="#sobremi"><span class="fa-solid fa-user"></span>  Sobre Mi</a></li>
-                    <li id="item-menu"><a href="#experiencias"><span class="fa-solid fa-briefcase"></span>  Experiencias</a></li>
-                    <li id="item-menu"><a href="#habilidades"><span class="fa-solid fa-laptop-code"></span>  Habilidades</a></li>
-                    <li id="item-menu"><a href="#formacion"><span class="fa-solid fa-book-open"></span>  Formacion</a></li>
-                    <li id="item-menu"><a href="#proyectos"><span class="fa-solid fa-diagram-project"></span>  Proyectos</a></li>
-                    <li id="item-menu"><a href="#contacto"><span class="fa-regular fa-comment-dots"></span>  Contacto</a></li>
+                    <li><a href="#inicio" class="a-item-menu"><span class="fa-solid fa-house"></span>  Inicio</a></li>
+                    <li><a href="#sobremi" class="a-item-menu"><span class="fa-solid fa-user"></span>  Sobre Mi</a></li>
+                    <li><a href="#experiencias" class="a-item-menu"><span class="fa-solid fa-briefcase"></span>  Experiencias</a></li>
+                    <li><a href="#habilidades" class="a-item-menu"><span class="fa-solid fa-laptop-code"></span>  Habilidades</a></li>
+                    <li><a href="#formacion" class="a-item-menu"><span class="fa-solid fa-book-open"></span>  Formacion</a></li>
+                    <li><a href="#proyectos" class="a-item-menu"><span class="fa-solid fa-diagram-project"></span>  Proyectos</a></li>
+                    <li><a href="#contacto" class="a-item-menu"><span class="fa-regular fa-comment-dots"></span>  Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -226,10 +226,13 @@
 
     <script>
         /*MENU*/
+        const HEADER = document.getElementById('cabezera');
         const MENU_SCREEN = document.getElementById('menu_screen');
         const BOTON_MENU = document.getElementById('btn_menu');
         const CRUZ_MENU = document.getElementById('cross_menu');
-        
+        const SECCIONES = document.querySelectorAll('section');
+        const ENLACES_MENU = document.querySelectorAll('.a-item-menu');
+
         let isOpenMenu = false;
 
         function abrirCerrarMenu() {
@@ -241,7 +244,12 @@
                 MENU_SCREEN.style.width = '0';
             }
         }
-
+        for (const enlace of ENLACES_MENU) {
+            enlace.onclick = () => {isOpenMenu = false; MENU_SCREEN.style.width = '0';};
+        }
+        for (const seccion of SECCIONES) {
+            seccion.style.scrollMarginTop = HEADER.offsetHeight + 'px';
+        }
         BOTON_MENU.onclick = abrirCerrarMenu;
         CRUZ_MENU.onclick = abrirCerrarMenu;
     </script>
