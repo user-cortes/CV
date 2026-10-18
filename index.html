@@ -203,41 +203,41 @@
 
                         <div class="card_proyectos">
                             <div class="portada_card">
-                            <img src="portadas webs/miniweb.png" alt="portada ejercicio">
+                                <img src="portadas webs/miniweb.png" alt="portada ejercicio">
                                 <h3>Biblioteca personal</h3>
                             </div>
-                                <div class="botones_card">
-                                    <a id="btn_ver_codigo" class="btn-vercode"
-                                        href="https://github.com/moso-dev/Biblioteca-Responsive" target="_blank">
-                                        <span class="fa-solid fa-code"></span>Ir al código
-                                    </a>
-                                </div>
+                            <div class="botones_card">
+                                <a id="btn_ver_codigo" class="btn-vercode"
+                                    href="https://github.com/moso-dev/Biblioteca-Responsive" target="_blank">
+                                    <span class="fa-solid fa-code"></span>Ir al código
+                                </a>
+                            </div>
                         </div>
 
                         <div class="card_proyectos">
                             <div class="portada_card">
-                            <img src="portadas webs/hangman.png" alt="portada ejercicio">
+                                <img src="portadas webs/hangman.png" alt="portada ejercicio">
                                 <h3>El ahorcado</h3>
                             </div>
-                                <div class="botones_card">
-                                    <a id="btn_ver_codigo" class="btn-vercode"
-                                        href="https://github.com/moso-dev/el_ahorcado" target="_blank">
-                                        <span class="fa-solid fa-code"></span>Ir al código
-                                    </a>
-                                </div>
+                            <div class="botones_card">
+                                <a id="btn_ver_codigo" class="btn-vercode"
+                                    href="https://github.com/moso-dev/el_ahorcado" target="_blank">
+                                    <span class="fa-solid fa-code"></span>Ir al código
+                                </a>
+                            </div>
                         </div>
 
                         <div class="card_proyectos">
                             <div class="portada_card">
-                            <img src="portadas webs/adivinaelnumero.png" alt="portada ejercicio">
+                                <img src="portadas webs/adivinaelnumero.png" alt="portada ejercicio">
                                 <h3>Adivina el número</h3>
                             </div>
-                                <div class="botones_card">
-                                    <a id="btn_ver_codigo" class="btn-vercode"
-                                        href="https://github.com/moso-dev/adivina_el_numero" target="_blank">
-                                        <span class="fa-solid fa-code"></span>Ir al código
-                                    </a>
-                                </div>
+                            <div class="botones_card">
+                                <a id="btn_ver_codigo" class="btn-vercode"
+                                    href="https://github.com/moso-dev/adivina_el_numero" target="_blank">
+                                    <span class="fa-solid fa-code"></span>Ir al código
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -285,9 +285,6 @@
             }
         }
 
-        for (const enlace of ENLACES_MENU) {
-            enlace.onclick = () => { isOpenMenu = false; MENU_SCREEN.style.width = '0'; };
-        }
 
         for (const seccion of SECCIONES) {
             seccion.style.scrollMarginTop = HEADER.offsetHeight + 'px';
@@ -296,6 +293,9 @@
         function activarMenuMovil() {
             if (window.innerWidth < 700) {
                 MENU_SCREEN.style.width = '0';
+                for (const enlace of ENLACES_MENU) {
+                    enlace.onclick = () => { isOpenMenu = false; MENU_SCREEN.style.width = '0'; };
+                }
             } else {
                 isOpenMenu = false;
                 MENU_SCREEN.style.width = '';
