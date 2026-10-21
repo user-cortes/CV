@@ -296,6 +296,7 @@
                 for (const enlace of ENLACES_MENU) {
                     enlace.onclick = () => { isOpenMenu = false; MENU_SCREEN.style.width = '0'; };
                 }
+                document.querySelector('#menu li:nth-child(4) a').innerHTML = '<span class="fa-solid fa-laptop-code iconos-menu"></span> Habilidades';
             } else {
                 isOpenMenu = false;
                 MENU_SCREEN.style.width = '';
