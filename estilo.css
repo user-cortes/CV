@@ -365,30 +365,94 @@ hr {
 
 /*CONTACTO*/
 
-#contacto p {
-    color: rgb(0, 0, 0, 0.7);
-    padding: 0 1rem;
+#contacto section {
+    background-color: rgb(9, 96, 174, 0.1);
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+.icon-header-contact {
+    font-size: 2.5rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: white;
+    background-color: #0960ae;
+}
+
+.text-header-contact {
+    font-size: 1rem;
+}
+
+.text-header-contact h3 {
+    color: #0960ae;
+}
+
+.text-header-contact p {
+      color: rgb(0, 0, 0, 0.7);
 }
 
 #contacto li {
-    border: 1px solid rgb(0, 0, 0, 0.1);
-    background-color: rgb(184, 209, 231, 0.1);
     padding: 0.5rem;
     display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 0.5rem;
     margin: 1rem 0.5rem;
 }
 
 #contacto li a {
     text-decoration: none;
-    color: #8fbfec;
+    color: #0960ae;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contacto li a span {
+    background-color: rgb(143, 191, 236, 0.3);
+    padding: 0.25rem;
+    border-radius: 5rem;
 }
 
 #contacto .icon-contact {
     font-size: 1.5rem;
     color: #0960ae;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5rem;
+    background-color: white;
+}
+
+/*FORMULARIO*/
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.fila-form {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+.fila-form input {
+    width: 80%;
+    border: none;
+}
+
+.fila-form label {
+    width: 20%;
+}
+
+.fila-form textarea {
+    border: none;
+    width: 80%;
 }
 
 /*PROYECTOS*/
