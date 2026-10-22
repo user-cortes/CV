@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/e87d10dd99.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#menu_screen" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
     <div class="container">
         <header id="cabezera">
             <h1>juan<span>.dev</span></h1>
@@ -18,22 +18,22 @@
             <nav id="menu_screen">
                 <button id="cross_menu"><span class="fa-solid fa-xmark"></span></button>
                 <ul id="menu">
-                    <li><a href="#inicio" class="a-item-menu"><span class="fa-solid fa-house iconos-menu"></span>
+                    <li><a href="#inicio" class="a-item-menu nav-link"><span class="fa-solid fa-house iconos-menu"></span>
                             Inicio</a></li>
-                    <li><a href="#sobremi" class="a-item-menu"><span class="fa-solid fa-user iconos-menu"></span> Sobre
+                    <li><a href="#sobremi" class="a-item-menu nav-link"><span class="fa-solid fa-user iconos-menu"></span> Sobre
                             mí</a></li>
-                    <li><a href="#experiencias" class="a-item-menu"><span
+                    <li><a href="#experiencias" class="a-item-menu nav-link"><span
                                 class="fa-solid fa-briefcase iconos-menu"></span>
                             Experiencias</a></li>
-                    <li><a href="#habilidades" class="a-item-menu"><span
+                    <li><a href="#habilidades" class="a-item-menu nav-link"><span
                                 class="fa-solid fa-laptop-code iconos-menu"></span>
                             Habilidades</a></li>
-                    <li><a href="#formacion" class="a-item-menu"><span class="fa-solid fa-book-open iconos-menu"></span>
+                    <li><a href="#formacion" class="a-item-menu nav-link"><span class="fa-solid fa-book-open iconos-menu"></span>
                             Formacion</a></li>
-                    <li><a href="#proyectos" class="a-item-menu"><span
+                    <li><a href="#proyectos" class="a-item-menu nav-link"><span
                                 class="fa-solid fa-diagram-project iconos-menu"></span>
                             Proyectos</a></li>
-                    <li><a href="#contacto" class="a-item-menu"><span
+                    <li><a href="#contacto" class="a-item-menu nav-link"><span
                                 class="fa-regular fa-comment-dots iconos-menu"></span>
                             Contacto</a></li>
                 </ul>
@@ -306,7 +306,7 @@
         </footer>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         /*MENU*/
         const HEADER = document.getElementById('cabezera');
