@@ -439,20 +439,35 @@ hr {
     padding: 0.5rem;
     background-color: white;
     border-radius: 5rem;
+    display: flex;
+    align-items: center;
 }
 
 .fila-form input {
-    width: 80%;
+    width: 100%;
     border: none;
+    padding-left: 0.25rem;
+    font-family: "Inter", sans-serif;
+}
+
+.fila-form input:focus {
+    outline: none;
 }
 
 .fila-form label {
-    width: 20%;
+    width: 11%;
+    color: #0960ae;
 }
 
 .fila-form textarea {
     border: none;
     width: 80%;
+    resize: none;
+    font-family: "Inter", sans-serif;
+}
+
+.fila-form textarea:focus {
+    outline: none;
 }
 
 /*PROYECTOS*/
