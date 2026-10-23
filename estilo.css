@@ -6,6 +6,10 @@ font-family: "Inconsolata", monospace;
 font-family: "Montserrat", sans-serif; 
 */
 
+:root {
+    color-scheme: light;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -515,7 +519,7 @@ hr {
     display: block;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     background-color: #0960ae;
     border: none;
@@ -532,11 +536,18 @@ hr {
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     color: white;
-    background-color: rgb(9, 96, 174, 0.9);
+    background-color: rgb(9, 96, 174);
     border-radius: 0.5rem;
     padding: 0.4rem 0.8rem;
     border: none;
     text-decoration: none;
+}
+
+.botones_card {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .head_proyectos {
