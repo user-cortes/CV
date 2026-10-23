@@ -563,6 +563,7 @@ hr {
         max-width: 400px;
         margin: 0 auto;
     }
+
 }
 
 @media (min-width: 700px) {
@@ -572,6 +573,7 @@ hr {
         margin: 0 auto;
         box-shadow: 0px 0px 10px rgb(0, 0, 0);
     }
+
     /*MENU*/
     nav {
         background-color: initial;
@@ -697,7 +699,7 @@ hr {
         width: 50%;
         max-width: 420px;
     }
-    
+
     #habilidades {
         width: 50%;
         max-width: 420px;
@@ -737,10 +739,12 @@ hr {
 
     .box_proyectos {
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .btn-vercode {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .card_proyectos {
@@ -748,6 +752,7 @@ hr {
         flex-direction: column;
         justify-content: space-between;
         gap: 0.5rem;
+        width: 310px;
     }
 
     /*CONTACTO*/
@@ -777,6 +782,11 @@ hr {
     }
 }
 
-footer h2, .head_proyectos, #formacion article h2, #habilidades article h2, #experiencias article h2, #sobremi article h2 {
+footer h2,
+.head_proyectos,
+#formacion article h2,
+#habilidades article h2,
+#experiencias article h2,
+#sobremi article h2 {
     margin-bottom: 3rem;
 }
