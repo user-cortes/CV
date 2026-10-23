@@ -288,7 +288,8 @@
                 </article>
                 <hr>
                 <article>
-                    <form class="form-contact" action="">
+                    <form class="form-contact" action="https://api.staticforms.dev/submit" method="POST">
+                        <input type="hidden" name="apiKey" value="sf_52d5513d7975dba1469849e6">
 
                         <div class="fila-form">
                             <label for="name_user"><span class="fa-solid fa-user icon-form"></span></label>
@@ -297,13 +298,13 @@
 
                         <div class="fila-form">
                             <label for="email_user"><span class="fa-solid fa-envelope icon-form"></span></label>
-                            <input type="email" name="email_user" id="email_user" placeholder="Tu correo electrónico">
+                            <input type="email" name="email" required id="email_user" placeholder="Tu correo electrónico">
                         </div>
 
                         <div class="fila-form">
                             <label for="mensaje"><span class="fa-solid fa-message icon-form"></span></label>
                             <textarea name="mensaje" id="mensaje" rows="5"
-                                placeholder="Escribe tu mensaje..."></textarea>
+                                placeholder="Escribe tu mensaje..." name="message" required></textarea>
                         </div>
 
                         <button type="submit" id="btn_form"><span class="fa-solid fa-paper-plane"></span>Enviar
